@@ -1,0 +1,473 @@
+{
+  "commit": "ba350e1c6b8f40448335e363d367789f4cada3ef",
+  "files": [
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16265_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16265_rr_sweep.csv",
+      "bytes": 15298,
+      "sha256": "c4ddf9f2f0c8d08012a0cdb1f19beb45b8b5917f2a055da90ff354ceb34b18d8"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16265_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16265_rr_sweep_step_metrics.csv",
+      "bytes": 5681842,
+      "sha256": "da6e875b49148f408ff4024a185a4a96e3ef55ef4ea128ef324eecd571ea879b"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16272_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16272_rr_sweep.csv",
+      "bytes": 15230,
+      "sha256": "a151e28ce72360c6691c7903282378bd3f6ef4b4cd01b54f63d9ac8abb8235a6"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16272_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16272_rr_sweep_step_metrics.csv",
+      "bytes": 5506629,
+      "sha256": "ea36b7f99f502553fa74a957fbab3b4603f66cea38ab59f9e458bbbeb820097a"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16273_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16273_rr_sweep.csv",
+      "bytes": 14945,
+      "sha256": "34a53c636ccc57d6f4dd4568cf030f7e42124b7cf1165279bda8e539c31c3fe1"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16273_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16273_rr_sweep_step_metrics.csv",
+      "bytes": 5430235,
+      "sha256": "e1030c4ad317634d7e535db76e51a7fe0f7b89fa3a02a68a060866fec6c5fe02"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16420_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16420_rr_sweep.csv",
+      "bytes": 15085,
+      "sha256": "c4499a4630cbdc7f813d5ab31939f04d082059dfdd921a79b80121ae78110f92"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16420_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16420_rr_sweep_step_metrics.csv",
+      "bytes": 5428217,
+      "sha256": "4444cdd5f122097c9ca45b8bb44e1257c6f84aac32253e5dd47005ed21e7a36e"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16483_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16483_rr_sweep.csv",
+      "bytes": 15099,
+      "sha256": "7226a162d59ad75a1fa988781c6c7c82823a5c656e9c0203aea8e1a89752026d"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16483_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16483_rr_sweep_step_metrics.csv",
+      "bytes": 5425850,
+      "sha256": "91a5b34a11ab705971496cf9aa730917c80676010a60a80844558c2a341534c7"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16539_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16539_rr_sweep.csv",
+      "bytes": 15196,
+      "sha256": "5704f7a2da2063c37b00a4036737f95d25d40fa37c932486abb3d27e4075713b"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16539_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16539_rr_sweep_step_metrics.csv",
+      "bytes": 5421444,
+      "sha256": "1de42ceae80fcb0ddb00cdb2ee11277aa95bc490499217ea66bb240cfc50bdcc"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16773_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16773_rr_sweep.csv",
+      "bytes": 15065,
+      "sha256": "96eb16d7fcbf53ebd1ae85f7122c388aabc1f135f8a0ce0b8270d1cc1948463a"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16773_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16773_rr_sweep_step_metrics.csv",
+      "bytes": 5412372,
+      "sha256": "eba91aa718a30fe16c3f45e1af3df83e6aafb6f883dd06f31e906a639ac709cf"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16786_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16786_rr_sweep.csv",
+      "bytes": 15065,
+      "sha256": "5c026f0e545b9053ba82aff95a63380345a466d559cae86b5e8ef707cd1591ca"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16786_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16786_rr_sweep_step_metrics.csv",
+      "bytes": 5408321,
+      "sha256": "37afb54441fdc817a3e51e8cf7df1c78f6891eef2671561f87af03ab74773b59"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16795_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16795_rr_sweep.csv",
+      "bytes": 14937,
+      "sha256": "d4ba639e1fd74ab64dc5389435ac42b0610bead82412735362f0062ff7c88ff4"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_16795_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_16795_rr_sweep_step_metrics.csv",
+      "bytes": 5403787,
+      "sha256": "46a9d45b38275cb59d42a6df6093a89ebb637160aba9911eef3fb39839b902ea"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_17052_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_17052_rr_sweep.csv",
+      "bytes": 15258,
+      "sha256": "33f14203b165984edf0834cf5d44557f07e65870c5df45b7c100faee600ab394"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_17052_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_17052_rr_sweep_step_metrics.csv",
+      "bytes": 5436226,
+      "sha256": "7c4e1028f40b9390983011c7d6493714bb39a4b53b8111825ef5792a7deafe53"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_17453_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_17453_rr_sweep.csv",
+      "bytes": 15181,
+      "sha256": "5fe8e298b566d7b8af8b510c3dfee5db1daf45a7bc049274ccd80da268eb354b"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_17453_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_17453_rr_sweep_step_metrics.csv",
+      "bytes": 5408948,
+      "sha256": "2d833e31def5d59c5df661565170501b075a93c905c848300fd8597af841dbaa"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_18177_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_18177_rr_sweep.csv",
+      "bytes": 15353,
+      "sha256": "d15c41609f47eff96f74d41b0557c070a91a5340859326196f94ce9370c1b7f3"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_18177_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_18177_rr_sweep_step_metrics.csv",
+      "bytes": 5358470,
+      "sha256": "029c3d6fd2aa4dc7807d0667aef25e6439e8364fef69c796588ad7f1423e9fc8"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_18184_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_18184_rr_sweep.csv",
+      "bytes": 15171,
+      "sha256": "9b9540fd61ee79162092858ff63fc074451eea88e098f462c7001b7e579d4354"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_18184_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_18184_rr_sweep_step_metrics.csv",
+      "bytes": 5433569,
+      "sha256": "1b2885adf0a60a5ee9117ad570a99d8ab01b9c6c2141732546bd9e07a4673ca0"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19088_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19088_rr_sweep.csv",
+      "bytes": 15316,
+      "sha256": "147c1b53cb73ee00e757c9f40f8d91b0fa313f04cd2c5273ded6d99ff1876985"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19088_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19088_rr_sweep_step_metrics.csv",
+      "bytes": 5165512,
+      "sha256": "6b7a82a2be181acfd47a176bd1c1b2dff3b926a99c25292c48c1c1b36797a145"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19090_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19090_rr_sweep.csv",
+      "bytes": 15058,
+      "sha256": "caf583a4c22371786895b558da25aaacd017e42d252a2d70ab6befba30c2fd80"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19090_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19090_rr_sweep_step_metrics.csv",
+      "bytes": 5415691,
+      "sha256": "884bfc1dcfadd6cbed69f792c924e8e68e46eeb5973a7734a3c86cd44ed1e4be"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19093_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19093_rr_sweep.csv",
+      "bytes": 14897,
+      "sha256": "7d7a033b026e0a9c1e9793cf0c6f715f2b55becbc80afa4e792c9780f0e658a1"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19093_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19093_rr_sweep_step_metrics.csv",
+      "bytes": 5395696,
+      "sha256": "954018c460b4188a5a6b10803e1b6e93991bbee0e286a2f9dcbf998b8bced3c2"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19140_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19140_rr_sweep.csv",
+      "bytes": 15173,
+      "sha256": "bb1f8ddff312036880a9c9a1e33ccdde8444f37f9cdcd750f7151d956741f59a"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19140_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19140_rr_sweep_step_metrics.csv",
+      "bytes": 5223553,
+      "sha256": "ffb855a2584e9719148570213e8c73dce9074d66132b80c1683e440e423ca512"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19830_rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19830_rr_sweep.csv",
+      "bytes": 15332,
+      "sha256": "62b993eb63d9a708b5f4fa858a925ebb73c4b33cc5c9f4470196dc8f3154ea27"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/results/subject_19830_rr_sweep_step_metrics.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/results/subject_19830_rr_sweep_step_metrics.csv",
+      "bytes": 5441193,
+      "sha256": "d38d37d4ead04e5b763d9a34cb8cbb0e05fb1af618bcd65d755d9d8cdb5ab70a"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/figures/paper/rr_sweep.csv",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/figures/paper/rr_sweep.csv",
+      "bytes": 24106,
+      "sha256": "b116d6b283df6a81e92b661549d826b274433b043dcd4407554cdbf02446b959"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/models.py",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/models.py",
+      "bytes": 16770,
+      "sha256": "e58c968d393fb6ea4b184cc1279d874cd3ea32a214e3e153fbc6eac4b8c0a3eb"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/ecg_dataloader.py",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/ecg_dataloader.py",
+      "bytes": 6479,
+      "sha256": "1f98c914f20a36edf7b88854a6d25acaecce097e88c6a60eccee31d6de765697"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/ecg_paper_metrics.py",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/ecg_paper_metrics.py",
+      "bytes": 49521,
+      "sha256": "efb9785bb5a304d7f1818721b8220bc15ced8973c5616dcaac07531776444f70"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/ecg_workflows.py",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/ecg_workflows.py",
+      "bytes": 7025,
+      "sha256": "cb43bde39209943f0c7c5e5a4b5a7cceb471fdf9cfa463347923620ec2092340"
+    },
+    {
+      "path": "ecg-tsfm-benchmark/README.md",
+      "url": "https://raw.githubusercontent.com/SubramanianLab/ecg-tsfm-benchmark/ba350e1c6b8f40448335e363d367789f4cada3ef/README.md",
+      "bytes": 7735,
+      "sha256": "078617fcf2c4b9a55ca489175aba97d5bd23091fbec0e9b07b9761402e77c28e"
+    },
+    {
+      "path": "nsrdb/16265.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16265.atr",
+      "bytes": 304326,
+      "sha256": "0c93d556b0d3a69a9e40e92a2e70381780b92425c76075c1e69a933aefb640ba"
+    },
+    {
+      "path": "nsrdb/16265.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16265.hea",
+      "bytes": 118,
+      "sha256": "9ebd1511ce2f0adb75cb587f55c8160b582ca35cac82abac6317516631c20079"
+    },
+    {
+      "path": "nsrdb/16272.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16272.atr",
+      "bytes": 268342,
+      "sha256": "eddec05b008f228196ed77d3868b01ffcde044a97276e34c7ff466af8db332a1"
+    },
+    {
+      "path": "nsrdb/16272.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16272.hea",
+      "bytes": 116,
+      "sha256": "7cb378fb8cd0116a9c8f3c7874de77d0bf7ebf09861165dbbbd9adc45ff69e7a"
+    },
+    {
+      "path": "nsrdb/16273.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16273.atr",
+      "bytes": 250552,
+      "sha256": "1bdc0a0140dd27b9e87c7f2865d3a925a607d6bd652346ea85848551bbbe4370"
+    },
+    {
+      "path": "nsrdb/16273.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16273.hea",
+      "bytes": 117,
+      "sha256": "021d5c56dc07197730426c18e9d7ce7a4fad45828b87a2eee9932519f582a677"
+    },
+    {
+      "path": "nsrdb/16420.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16420.atr",
+      "bytes": 314364,
+      "sha256": "a7c22e7864f81457cf4f5753b9f9344eb7cf6074a5721ea83ba2d150b22b7672"
+    },
+    {
+      "path": "nsrdb/16420.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16420.hea",
+      "bytes": 116,
+      "sha256": "07af6282a8ca7d62487881ce8e82cf092032c0d0c6b47010745b7c106f7a382c"
+    },
+    {
+      "path": "nsrdb/16483.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16483.atr",
+      "bytes": 257534,
+      "sha256": "3ea8628005fae2fba885fc72f5d9c28aea4cc09e380cbb878357e905a4098a3f"
+    },
+    {
+      "path": "nsrdb/16483.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16483.hea",
+      "bytes": 117,
+      "sha256": "f307294c75cd33f08f506035178ef22cb4dc67f843dd7c58b70577dba7133dd6"
+    },
+    {
+      "path": "nsrdb/16539.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16539.atr",
+      "bytes": 274178,
+      "sha256": "78bda45991dc3bcb675dc007f7f0618928178876f2686c843d03c75ce8de8e41"
+    },
+    {
+      "path": "nsrdb/16539.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16539.hea",
+      "bytes": 117,
+      "sha256": "d871b825f21c3d405417891a7c842701b271d781d3a7cbf07a685de325c4f17e"
+    },
+    {
+      "path": "nsrdb/16773.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16773.atr",
+      "bytes": 461400,
+      "sha256": "88e61bb9c2a40cf66afaa319575171a1c9356fe17e74160cc548af388945310b"
+    },
+    {
+      "path": "nsrdb/16773.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16773.hea",
+      "bytes": 118,
+      "sha256": "5992a3db98b8aa2ad1fbfbe1b1b6a048e3ed19368529aecef8b8167516fd05a8"
+    },
+    {
+      "path": "nsrdb/16786.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16786.atr",
+      "bytes": 206454,
+      "sha256": "7ba88737952e81477cb79aa7d46813cc97f9d94a52b141769e336fe27c719651"
+    },
+    {
+      "path": "nsrdb/16786.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16786.hea",
+      "bytes": 115,
+      "sha256": "6c273415a916a5bf6ae963d3e5c96902534407fbb67f33e87144ebad0c4703ca"
+    },
+    {
+      "path": "nsrdb/16795.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16795.atr",
+      "bytes": 257590,
+      "sha256": "64280f92f08d2423dca1a36b3db64afb9f96ff98867e6dd725b4a8cf4d23b3a5"
+    },
+    {
+      "path": "nsrdb/16795.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/16795.hea",
+      "bytes": 114,
+      "sha256": "afcd893e3598e1c20a70db6f55b77d826e808776882ae1257f2ff733fb6df50d"
+    },
+    {
+      "path": "nsrdb/17052.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/17052.atr",
+      "bytes": 218098,
+      "sha256": "1b9a73c73453a737b079e23523077791cf02b90828b2b3fb695580bff7646621"
+    },
+    {
+      "path": "nsrdb/17052.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/17052.hea",
+      "bytes": 117,
+      "sha256": "c0e00ce89e333d1f188e8db2727f8364b2d8a5eeeecaa4de3008e1735a1dd16f"
+    },
+    {
+      "path": "nsrdb/17453.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/17453.atr",
+      "bytes": 261466,
+      "sha256": "e76fa34f87a052354ad7b3d423d876703ed81a4797932ccd7fb66fafd4cf2503"
+    },
+    {
+      "path": "nsrdb/17453.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/17453.hea",
+      "bytes": 116,
+      "sha256": "4cc56b42f2ec570b8c5ddda425a5a4528cf516298f4b44cec94846eabe72965d"
+    },
+    {
+      "path": "nsrdb/18177.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/18177.atr",
+      "bytes": 413624,
+      "sha256": "efb2bceafd940c9cd37909926c85c74285b1021fa0157e34dd9741208a534903"
+    },
+    {
+      "path": "nsrdb/18177.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/18177.hea",
+      "bytes": 117,
+      "sha256": "9177153991de25c016024e6062a464519ad3147facc639eb1693da3179ad12fb"
+    },
+    {
+      "path": "nsrdb/18184.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/18184.atr",
+      "bytes": 232250,
+      "sha256": "9f7a68e345fbc20ff6335a48f20aa898cf9f824e019a1343c88b29fe1729362a"
+    },
+    {
+      "path": "nsrdb/18184.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/18184.hea",
+      "bytes": 116,
+      "sha256": "f6907ba298ad844859acb46db8a67637111111eeea69607b66c9636bffaea445"
+    },
+    {
+      "path": "nsrdb/19088.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19088.atr",
+      "bytes": 390826,
+      "sha256": "a5a4eef0430ec2df0b7a261c104f2c45c0c9acd218857131dd5381499e521e29"
+    },
+    {
+      "path": "nsrdb/19088.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19088.hea",
+      "bytes": 116,
+      "sha256": "f9ef354649a620d7fa1cb5b8b1fcb6f31a846615728da641d7ba9e4f26f82dee"
+    },
+    {
+      "path": "nsrdb/19090.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19090.atr",
+      "bytes": 243326,
+      "sha256": "4fdcab33256b8448c70590dd0314881c550de17027025db9d00e73b86ab2895a"
+    },
+    {
+      "path": "nsrdb/19090.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19090.hea",
+      "bytes": 116,
+      "sha256": "754d41e1eca65d887f6292914f4c2cef017adb6ce91c61bb8571ae46209f0f01"
+    },
+    {
+      "path": "nsrdb/19093.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19093.atr",
+      "bytes": 236284,
+      "sha256": "e64a78d45d815a3078247c2e2c0937616279ce721f6628f877ec4c9165483de9"
+    },
+    {
+      "path": "nsrdb/19093.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19093.hea",
+      "bytes": 117,
+      "sha256": "cabe74f5276a4b02f6487fa9e9b64be2d13482c19f32bcf40d8a3738f64593e7"
+    },
+    {
+      "path": "nsrdb/19140.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19140.atr",
+      "bytes": 259694,
+      "sha256": "08f2fbdd5c3e506a277849618ad574e15cec4b462519149c632d3affd7bc6b62"
+    },
+    {
+      "path": "nsrdb/19140.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19140.hea",
+      "bytes": 116,
+      "sha256": "558d8b5afe8cd66478056392d74fc8192c700e1bbf50f80d459d492a71af72d4"
+    },
+    {
+      "path": "nsrdb/19830.atr",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19830.atr",
+      "bytes": 349972,
+      "sha256": "896fa074e7c36bfb62fcccf81078395f2fb0b0ad8ce3a8f1b2d24a4baedcad34"
+    },
+    {
+      "path": "nsrdb/19830.hea",
+      "url": "https://physionet.org/files/nsrdb/1.0.0/19830.hea",
+      "bytes": 117,
+      "sha256": "4b90f7101ac02ad661410a85d63a23c34454b9558f7d0474e72ee563b653fe36"
+    }
+  ]
+}

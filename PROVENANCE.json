@@ -1,0 +1,59 @@
+{
+  "analysisVersion": "1.0.0",
+  "retrievalDate": "2026-11-09",
+  "upstream": {
+    "repo": "https://github.com/SubramanianLab/ecg-tsfm-benchmark",
+    "commit": "ba350e1c6b8f40448335e363d367789f4cada3ef",
+    "dataUrl": "https://physionet.org/content/nsrdb/1.0.0/",
+    "paperUrl": "https://www.biorxiv.org/content/10.64898/2026.05.25.727760v2",
+    "cohort": "18 MIT-BIH NSRDB records; referred subjects without significant arrhythmias"
+  },
+  "inputManifest": "source_manifest.json",
+  "inputFiles": 78,
+  "repositoryLicense": "No LICENSE found at pinned commit. Upstream code/raw CSVs are not redistributed.",
+  "nsrdbLicense": "Open Data Commons Attribution License v1.0",
+  "actualUpstreamReuse": [
+    "18 per-subject saved summary and step tables",
+    "source beat-annotation symbol set",
+    "unmodified pure models.py::_fixed_length_context run 576 times on real observed RR histories"
+  ],
+  "noModelInference": true,
+  "noIndependentValidation": true,
+  "reproduction": [
+    {
+      "model": "TimesFM",
+      "officialMeanRmseMs": 341.33321026133166,
+      "absoluteDifferenceMs": 0.0
+    },
+    {
+      "model": "Chronos-2",
+      "officialMeanRmseMs": 589.5561973253886,
+      "absoluteDifferenceMs": 0.0
+    },
+    {
+      "model": "Moirai 2.0",
+      "officialMeanRmseMs": 756.2373959355884,
+      "absoluteDifferenceMs": 0.0
+    }
+  ],
+  "definitions": {
+    "rmseMs": "source rr_rmse \u00d71000/128",
+    "rmssdRetention": "median across1009 source positions of mean(predicted16beatRMSSD)/mean(observed16beatRMSSD)",
+    "profile": "64-beat disjoint display bins; sqrt(mean squared step RMSE), median source local-ratio centers in bin",
+    "meanObservedRmssdMs": "arithmetic mean of1009 source window-averaged observed RMSSDs \u00d71000/128; not a ratio denominator for the median ratio",
+    "history": "header128Hz; same source beat-symbol set; each boundary64+8*i seconds, preceding RR interval count by source searchsorted rule",
+    "targetQC": "Union of unique annotation-derived RR indices in each of32 forecast target ranges [boundary_rr_idx,boundary_rr_idx+1024); max and count strictly over2s. Descriptive QC flag, not clinical cutoff; no exclusion or metric changes."
+  },
+  "limitations": [
+    "Secondary reanalysis of saved outputs, not new model inference or independent validation.",
+    "A smooth point forecast does not establish a poorly calibrated predictive distribution.",
+    "Local 16-beat RR variability is not a direct autonomic-state measure or standard clinical HRV endpoint.",
+    "Overlapping origins, two repeated RR lead inputs and sliding positions are not independent subjects.",
+    "Requested context differs from observed history; padding effects are hypotheses, not causal conclusions.",
+    "Exploratory thresholds are user choices, not validated clinical criteria.",
+    "The source uses broad beat annotations, not exclusively normal-to-normal intervals.",
+    "Filtered annotations can bridge gaps: long target RR intervals may reflect annotation gaps/artifact, not physiological variation. No records are excluded.",
+    "Saved per-subject LSTM uses a different training design and is omitted from this matched comparison.",
+    "No raw forecasts are reconstructed, and no surgical restricted-access data were used."
+  ]
+}

@@ -1,0 +1,28 @@
+Source attribution and reuse boundaries
+
+SANDLab / SubramanianLab: Evaluating Long-Range Temporal Structure in Foundation
+Model-Based Forecasts of Heartbeat Dynamics (2026), ecg-tsfm-benchmark commit
+ba350e1c6b8f40448335e363d367789f4cada3ef.
+https://github.com/SubramanianLab/ecg-tsfm-benchmark
+
+No LICENSE file was found in that pinned repository. This project does not
+republish its source code, original CSVs, or figures. It publishes new analysis
+code, derived factual summaries and citations. Reproduction obtains upstream
+files separately to a private cache and uses a bounded pure helper locally.
+No upstream licensing rights or endorsement are claimed.
+
+MIT-BIH Normal Sinus Rhythm Database v1.0.0, George Moody / PhysioNet.
+DOI:10.13026/C2NK5R
+https://physionet.org/content/nsrdb/1.0.0/
+Source license: Open Data Commons Attribution License v1.0.
+https://opendatacommons.org/licenses/by/1-0/
+Only annotations and headers are fetched; original inputs are not bundled here.
+
+Standard PhysioNet citation:
+Goldberger AL, Amaral LAN, Glass L, et al. PhysioBank, PhysioToolkit, and
+PhysioNet: Components of a New Research Resource for Complex Physiologic
+Signals. Circulation. 2000;101(23):e215-e220. doi:10.1161/01.CIR.101.23.e215.
+
+All analysis is research-only, retrospective, assistant-supported, and not
+affiliated with or endorsed by SANDLab, UCSF, Berkeley, PhysioNet or the model
+developers. No restricted surgical dataset was accessed.

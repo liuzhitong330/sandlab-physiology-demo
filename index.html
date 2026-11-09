@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A matched-subject review of point error and retained local heartbeat variation in SANDLab's public foundation-model benchmark.">
+  <title>Exploratory Analyses Inspired by the Subramanian Lab</title>
+  <link rel="stylesheet" href="styles.css?v=20261109">
+</head>
+<body>
+  <main class="page">
+    <h1>Exploratory Analyses Inspired by the Subramanian Lab</h1>
+    <div class="byline">
+      Cathy Liu · Biotechnology &amp; computational modeling · <a href="mailto:cathyliu014@gmail.com">cathyliu014@gmail.com</a><br>
+      Inspired by SANDLab, UCSF<br>
+      Personal exploratory project, November 2026
+    </div>
+    <nav class="section-nav" aria-label="Demo sections">
+      <a href="#motivation">Motivation</a>
+      <a href="#a1">Forecast review</a>
+      <a href="#a2">Protocol audit</a>
+      <a href="#relevance">Relevance</a>
+    </nav>
+
+    <p>SANDLab uses computation to understand human physiology. Its heartbeat forecasting work raises a useful question: <strong>does a good heartbeat forecast preserve variation in annotated intervals?</strong> A prediction can be close in milliseconds yet retain little local variation. That variation may also contain annotation noise, so it needs a quality check before physiological interpretation.</p>
+    <p>I built a subject-level review of the lab's public benchmark, pairing point error with retained local variation. It identifies cases that deserve a closer look and checks the difference between requested input length and actually observed history—without treating a smooth point forecast as a failed predictive distribution.</p>
+
+    <hr id="motivation">
+    <section aria-labelledby="how-heading">
+      <h2 id="how-heading">How it works</h2>
+      <p>Compare TimesFM, Chronos-2 and Moirai 2.0 on the same 18 participants, using saved results at a requested 8,192-beat context and 1,024-beat forecast horizon. Each mark below is one model–participant result, not an independent clinical observation.</p>
+      <p class="methods-note">The horizontal axis is interval RMSE in milliseconds. The vertical axis is predicted / observed local RR-RMSSD: a measure of successive-interval variation within 16-beat windows. A ratio of 1 retains the observed amount; below 1 retains less. This is not an autonomic-state measurement.</p>
+    </section>
+
+    <hr id="a1">
+    <section aria-labelledby="analysis-one-heading">
+      <h2 id="analysis-one-heading">Analysis 1 — When do the two checks disagree?</h2>
+      <div class="experiment">
+        <div class="exp-label">Exploratory diagnostic</div>
+        <div class="exp-title">Keep point accuracy and local variation as separate questions</div>
+        <p>Set a maximum RMSE and a two-sided variation tolerance. The shaded area satisfies both chosen checks. These thresholds are illustrative review criteria, not clinical cutoffs or a model-quality verdict.</p>
+      </div>
+      <div class="panel">
+        <div class="control-row">
+          <label for="rmse-limit">RMSE ceiling (ms)<input id="rmse-limit" type="number" min="0" max="10000" step="10" value="200"></label>
+          <label for="ratio-factor">Variation factor<select id="ratio-factor"><option value="1.25">1.25× · 0.8–1.25</option><option value="1.5">1.5× · 0.67–1.5</option><option value="2" selected>2× · 0.5–2</option><option value="4">4× · 0.25–4</option><option value="10">10× · 0.1–10</option><option value="100">100× · 0.01–100</option></select></label>
+          <label for="subject-select">Inspect participant<select id="subject-select"></select></label>
+        </div>
+        <p class="microcopy" id="input-status" role="status"></p>
+        <p class="microcopy" id="threshold-label"></p>
+        <div class="legend" aria-label="Model marker legend"><span>● TimesFM</span><span>■ Chronos-2</span><span>▲ Moirai 2.0</span></div>
+        <svg id="hero-viz" class="viz" viewBox="0 0 600 350" role="img" aria-label="Subject-level RMSE versus retained local RMSSD for three models"></svg>
+        <figcaption>All 54 saved model–participant results are shown; the selected participant is emphasized. Click a mark or use the participant selector. The logarithmic vertical axis makes strong attenuation visible; no raw forecast traces are reconstructed.</figcaption>
+        <div class="readout" id="readout" aria-live="polite"></div>
+        <h3 class="detail-heading" id="subject-heading">Participant review</h3>
+        <div class="table-scroll"><table class="review-table"><caption class="sr-only">Three models for the selected participant</caption><thead><tr><th scope="col">Model</th><th scope="col">RMSE</th><th scope="col">Local ratio</th><th scope="col">Review outcome</th></tr></thead><tbody id="subject-body"></tbody></table></div>
+        <p class="microcopy" id="subject-note"></p>
+        <p class="methods-note" id="annotation-qc"></p>
+        <div class="value-readouts">
+          <p><strong>What this lets the lab do:</strong> <span id="lab-value"></span></p>
+          <p><strong>Where Cathy adds value:</strong> turn a pooled performance comparison into a traceable participant-level review, with explicit units, matched data and a testable rerun plan.</p>
+        </div>
+        <button type="button" class="export-button" id="export-review">Download all 54 review records (.csv)</button>
+        <p class="microcopy" id="export-status" role="status"></p>
+      </div>
+      <div class="metric-row">
+        <div class="metric"><span class="metric-val" id="metric-one">—</span><span class="metric-desc">matched participants</span></div>
+        <div class="metric"><span class="metric-val" id="metric-two">—</span><span class="metric-desc">model–participant records within RMSE ceiling</span></div>
+        <div class="metric"><span class="metric-val" id="metric-three">—</span><span class="metric-desc">records satisfying both chosen checks</span></div>
+      </div>
+      <p id="comparison-summary"></p>
+      <div class="table-scroll"><table class="review-table"><caption class="sr-only">Model-level descriptive review counts</caption><thead><tr><th scope="col">Model</th><th scope="col">RMSE check</th><th scope="col">Both checks</th><th scope="col">Median ratio</th></tr></thead><tbody id="model-body"></tbody></table></div>
+    </section>
+
+    <hr id="a2">
+    <section aria-labelledby="analysis-two-heading">
+      <h2 id="analysis-two-heading">Analysis 2 — Requested history is not observed history</h2>
+      <p>The saved setting says “8,192 beats,” but the evaluation starts near the beginning of each recording. The input wrappers extend shorter histories to the requested length. That distinction matters when designing a follow-up benchmark.</p>
+      <div class="experiment">
+        <div class="exp-label">Source-code and annotation audit</div>
+        <div class="exp-title" id="audit-title">Checking the observed history behind the label</div>
+        <p id="audit-summary"></p>
+      </div>
+      <svg id="history-viz" class="viz" viewBox="0 0 600 112" role="img" aria-label="Observed RR-history range compared with the requested context length"></svg>
+      <figcaption id="history-caption"></figcaption>
+      <div class="table-scroll"><table class="review-table"><caption class="sr-only">Observed history and padding audit for selected participant</caption><thead><tr><th scope="col">Input fact</th><th scope="col">Selected participant</th></tr></thead><tbody id="audit-body"></tbody></table></div>
+      <p class="methods-note">TimesFM extends the first observed value to the left; the Chronos and Moirai wrappers use zero-padding. This audit does not establish that padding caused any particular error or variability result.</p>
+      <h3 class="detail-heading">A controlled next comparison</h3>
+      <ol class="next-steps">
+        <li>Inspect long intervals against the original ECG and beat annotations. Prespecify beat-quality checks, then report clean and flagged strata separately; do not silently remove difficult records.</li>
+        <li>Use temporally separated forecast origins with the same genuinely observed RR history for every model. Keep participants as the unit of evaluation.</li>
+        <li>Add persistence and appropriately sampled probabilistic forecasts. Measure point error separately from distributional calibration and the variation of generated trajectories.</li>
+        <li>Only then test a prespecified physiological task. If calibrated trajectories retain useful variation, examine whether that helps the task; if not, revise the forecast target or representation.</li>
+      </ol>
+    </section>
+
+    <hr id="relevance">
+    <section aria-labelledby="relevance-heading">
+      <h2 id="relevance-heading">Why this matters for the lab</h2>
+      <p>For physiological modeling, a low point-error score is useful but incomplete. This review makes it easier to select diagnostic cases and specify a fair follow-up before asking whether forecasts support meaningful physiological inference. It extends the lab's reported variability analysis with a participant-level decision aid; it is not a new discovery that point forecasts can be smooth.</p>
+      <h2>What I would bring</h2>
+      <p>My virtual-neurostimulation project involved connecting biological literature with computational models and comparing outcomes under explicit assumptions. Alongside my PDAC analysis and research documentation experience, that is the approach I would bring here: make comparisons reproducible, question what a metric really measures, and turn a limitation into a focused next experiment.</p>
+      <h2>Methods note</h2>
+      <p class="methods-note">This is a reanalysis of <a href="https://github.com/SubramanianLab/ecg-tsfm-benchmark">SANDLab's released benchmark summaries</a>, not new model training or independent validation. The underlying <a href="https://physionet.org/content/nsrdb/1.0.0/">MIT-BIH Normal Sinus Rhythm Database</a> contains 18 long-term recordings from people found to have no significant arrhythmias; it does not establish performance in surgical or disease cohorts.</p>
+      <details class="methods-details"><summary>Definitions, source version, and limitations</summary>
+        <p>Each participant's interval RMSE comes from the saved pooled result, converted from annotation samples to milliseconds at 128 Hz. The retained-RMSSD statistic is the median across 1,009 overlapping 16-beat positions of the source's window-averaged predicted/observed RMSSD ratio—not the mean of individual-window ratios or a standardized clinical HRV measurement.</p>
+        <p>The source averages 32 nearby origins × two repeated annotation-derived lead inputs. These are not 64 independent observations, and the overlapping positions are not independent replicates. No confidence intervals are constructed from them. The per-subject LSTM training protocol differs, so it is excluded from the matched foundation-model ranking.</p>
+        <p>Point-forecast smoothness does not establish poor predictive-distribution calibration. Long annotation intervals may include missed or noisy beats, with unverified cause; they can affect both forecast error and the variability denominator. The >2-second flag is descriptive QC, not a clinical cutoff. All 54 records remain in this comparison; the saved summaries cannot be cleaned retrospectively. Neither RMSE nor retained RMSSD diagnoses autonomic state, nociception, or disease. No restricted surgical data, raw forecast traces or clinical decision rule are used.</p>
+        <p id="source-version"></p>
+        <p><a href="README.md">Reproduce the analysis</a> · <a href="results.csv" download>Derived results</a> · <a href="PROVENANCE.json">Provenance</a> · <a href="https://github.com/liuzhitong330/sandlab-physiology-demo">Demo code</a></p>
+        <p>Analysis and interface code were developed with AI assistance. This artifact shows a structured, reproducible analysis approach; it does not establish unaided implementation, human-participant recruitment, IRB, or physiological acquisition experience.</p>
+      </details>
+    </section>
+    <footer>
+      Cathy Liu · <a href="mailto:cathyliu014@gmail.com">cathyliu014@gmail.com</a> · <a href="tel:+14152163799">415-216-3799</a><br>
+      Virtual epilepsy neurostimulation project, <a href="https://arxiv.org/abs/2606.04339">arXiv:2606.04339</a>
+    </footer>
+  </main>
+  <script src="data.js?v=20261109"></script>
+  <script src="app.js?v=20261109"></script>
+</body>
+</html>
